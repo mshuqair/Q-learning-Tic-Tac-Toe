@@ -1,5 +1,6 @@
 # Q-learning-Tic-Tac-Toe
 Reinforcement learning of the game of Tic Tac Toe in Python.
+This a fork of the original work.
 
 ## Basic usage
 To play Tic Tac Toe against a computer player trained by playing 200,000 games against itself, enter
