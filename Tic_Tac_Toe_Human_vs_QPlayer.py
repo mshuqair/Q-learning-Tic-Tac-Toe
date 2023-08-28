@@ -17,12 +17,12 @@ def difficulty_select(x):
         window.destroy()
     if x == 3:
         print("Hard difficulty selected")
-        Q = pickle.load(open("Tic_Tac_Toe_Trained/Q_epsilon_09_Nepisodes_50000.p", "rb"))
+        Q = pickle.load(open("Tic_Tac_Toe_Trained/Q_epsilon_09_Nepisodes_100000.p", "rb"))
         player2 = QPlayer(mark="O", epsilon=0.1)
         window.destroy()
     if x == 4:
-        print("Impossible difficulty selected")
-        Q = pickle.load(open("Tic_Tac_Toe_Trained/Q_epsilon_09_Nepisodes_100000.p", "rb"))
+        print("Veteran difficulty selected")
+        Q = pickle.load(open("Tic_Tac_Toe_Trained/Q_epsilon_09_Nepisodes_250000.p", "rb"))
         window.destroy()
     return 0
 
@@ -45,7 +45,7 @@ while True:
                          command=lambda: difficulty_select(2), bg='green')
     button_C = tk.Button(window, text="Hard", font=('Tahoma', 8, 'bold'), fg='white', height=2, width=24,
                          command=lambda: difficulty_select(3), bg='orangered')
-    button_D = tk.Button(window, text="Impossible!", font=('Tahoma', 8, 'bold'), fg='white', height=2, width=24,
+    button_D = tk.Button(window, text="Veteran", font=('Tahoma', 8, 'bold'), fg='white', height=2, width=24,
                          command=lambda: difficulty_select(4), bg='crimson')
     button_E = tk.Button(window, text="Close Game", font=('Tahoma', 8, 'bold'), fg='white', height=1, width=12,
                          command=lambda: sys.exit(), bg='Black')
