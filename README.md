@@ -1,7 +1,7 @@
 # Q-learning-Tic-Tac-Toe
 Reinforcement learning of the game of Tic Tac Toe in Python.
 
-This a fork of the original work.
+This is a fork of the original work.
 
 ## Updates
 I'll be listing the updates here...
@@ -10,16 +10,16 @@ I'll be listing the updates here...
 
 
 ## Basic usage
-To play Tic Tac Toe against a computer player trained by playing 200,000 games against itself, enter
+To play Tic Tac Toe against a computer player trained by playing 250,000 games against itself, enter
 
 `python Tic_Tac_Toe_Human_vs_QPlayer.py` 
 
-at the command line. (You'll need to have Python installed with the Numpy package). This will bring up a simple GUI in which clicking on any of the buttons causes the mark "X" to appear and the computer to immediately respond with a countermove (Figure 1).
+at the command line. (You'll need to have Python installed with the Numpy package). This will bring up a simple GUI in which clicking on any of the buttons causes the mark "X" to appear, and the computer immediately responds with a countermove (Image 2).
 
-![](Images/Tic_Tac_Toe_cats_game.png)  
-**Figure 1.** A Tic Tac Toe game which resulted in a tie (cat's game).
+![](images/image_3.png)  
+**Figure 1.** A Tic Tac Toe game that resulted in a tie (cat's game).
 
-I was unable to beat the `QPlayer`, and would be interested to hear if you can!
+I could not beat the `QPlayer,` I would like to hear if you can!
 
 Alternatively, the user can also play against the "T-hand" player by setting `player2 = THandPlayer(mark="O")` at the bottom of the code. The "T-hand" player makes winning moves if they are available and blocks those of opponents (cf. [Boyan (1992)](http://www.cs.cmu.edu/~jab/cv/pubs/boyan.backgammon-thesis.pdf)), otherwise choosing moves at random. Unlike the QPlayer, it can frequently be beaten with the right strategy.
 
