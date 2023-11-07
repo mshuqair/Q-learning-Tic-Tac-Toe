@@ -14,7 +14,7 @@ To play Tic Tac Toe against a computer player trained by playing 250,000 games a
 
 `python Tic_Tac_Toe_Human_vs_QPlayer.py` 
 
-at the command line. (You'll need to have Python installed with the Numpy package). This will bring up a simple GUI in which clicking on any of the buttons causes the mark "X" to appear, and the computer immediately responds with a countermove (Image 2).
+at the command line. (You'll need to have Python installed with the Numpy package). This will bring up a simple GUI in which clicking on any of the buttons causes the mark "X" to appear, and the computer immediately responds with a countermove (Figure 1).
 
 ![](images/image_3.png)  
 **Figure 1.** A Tic Tac Toe game that resulted in a tie (cat's game).
